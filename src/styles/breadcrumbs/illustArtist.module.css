@@ -1,0 +1,21 @@
+.list-item-1 {
+  font-family: "Abel";
+  font-size: 32px;
+  cursor: pointer;
+}
+.list-item-2,
+.list-item-4 {
+  font-family: "Abel";
+  font-size: 24px;
+}
+.list-item-3,
+.list-item-5 {
+  font-family: "Zen Maru Gothic";
+  font-size: 24px;
+}
+.list-item-1:hover,
+.list-item-3:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}

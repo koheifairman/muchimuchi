@@ -1,0 +1,13 @@
+.list-item-1,
+.list-item-2,
+.list-item-3 {
+  font-family: "Zen Maru Gothic";
+  font-size: 23px;
+  font-weight: 100;
+}
+
+.list-item-1:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  cursor: pointer;
+}

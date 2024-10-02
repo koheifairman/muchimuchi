@@ -1,0 +1,22 @@
+/* transition：CSSスタイルをアニメ効果で変化させるプロパティ */
+.iconImage {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* ↓で定義したtransformとbox-shadowを、継続時間0.3s、速度曲線ease（最初は遅く、中間で速く、最後は遅く。デフォルト値）で実行 */
+  border-radius: 12px;
+  background-color: transparent;
+}
+
+/* ホバー */
+.iconImage:hover {
+  transform: translateY(-10px); /* 画像を垂直方向に10px上に移動させる */
+  box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.4); /* 水平　垂直　ぼかし　広がり　色 */
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+/* クリック */
+.iconAnimate {
+  transform: scale(
+    1.1
+  ) !important; /* 画像を1.1倍に拡大。transformをホバー・クリック両方で使うため、!importantによりクリックを優先させる。 */
+  border-radius: 12px !important;
+}

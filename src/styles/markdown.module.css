@@ -1,0 +1,83 @@
+.markdown {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.markdown ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.markdown li {
+  font-family: "Zen Maru Gothic";
+  font-size: 23px;
+  font-weight: 100;
+}
+
+.markdown a {
+  text-decoration: none;
+  color: black;
+}
+
+.markdown a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.markdown h1 {
+  font-family: "Zen Maru Gothic";
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.markdown h2 {
+  font-family: "Zen Maru Gothic";
+  font-size: 38px;
+  font-weight: 400;
+}
+
+.markdown h3 {
+  font-family: "Zen Maru Gothic";
+  font-size: 30px;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+.markdown h4 {
+  font-family: "Zen Maru Gothic";
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.markdown p {
+  font-family: "Zen Maru Gothic";
+  font-size: 20px;
+  font-weight: 400;
+  white-space: pre-wrap;
+}
+
+/* ---カスタムコンポーネント--- */
+.subtitle {
+  font-family: "Zen Maru Gothic";
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
+.thumbnail {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 280px;
+  margin: 0 auto;
+  border: 5px solid #a9a9a9;
+  border-radius: 12px;
+}
