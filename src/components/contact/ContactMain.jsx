@@ -1,14 +1,14 @@
 import Image from "next/image";
 
-import ContactXIcon from "../../../public/contact/contact-x-icon.webp";
-
 const ContactMain = () => {
+  const xImageSrc =
+    "https://storage.googleapis.com/muchimuchi_bucket/contact/contact-x-icon.webp";
   return (
     <div className="container">
       <div className="rectangle">
         <div className="x-image">
           <Image
-            src={ContactXIcon}
+            src={xImageSrc}
             alt="Xアイコン"
             width={50}
             height={50}

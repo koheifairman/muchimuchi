@@ -34,7 +34,7 @@ const LiberalartsIndex = () => {
       <IndexMain />
 
       <Head>
-        <title>リベラルアーツのインデックス</title>
+        <title>リベラル・アーツ</title>
         <meta
           name="description"
           content="リベラルアーツのインデックスページ。"

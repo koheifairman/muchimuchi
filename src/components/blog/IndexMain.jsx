@@ -12,54 +12,56 @@ const IndexMain = () => {
     {
       id: 1,
       label: "liberalarts",
-      src: "/blog/blog-liberalarts-icon.webp",
-      hover: "/about/about-mascot-icon.webp",
+      src: "https://storage.googleapis.com/muchimuchi_bucket/blog/blog-liberalarts-icon.webp",
+      hover:
+        "https://storage.googleapis.com/muchimuchi_bucket/about/about-mascot-icon.webp",
       alt: "リベラル・アーツ",
     },
     {
       id: 2,
       label: "private",
-      src: "/blog/blog-private-icon.webp",
-      hover: "/hover/hover-noel.webp",
+      src: "https://storage.googleapis.com/muchimuchi_bucket/blog/blog-private-icon.webp",
+      hover:
+        "https://storage.googleapis.com/muchimuchi_bucket/hover/hover-noel.webp",
       alt: "私的なこと",
     },
   ];
   //関数
-  const clickRouter = (iconImagesArg) => {
-    if (iconImagesArg.id === 1) {
+  const clickRouter = (imagesArg) => {
+    if (imagesArg.id === 1) {
       router.push(`/liberalarts`);
-    } else if (iconImagesArg.id === 2) {
+    } else if (imagesArg.id === 2) {
       router.push(`/blog/private`);
     }
   };
 
   return (
     <div className="container">
-      {iconImages.map((iconImagesArg) => {
+      {iconImages.map((imagesArg) => {
         return (
-          <div key={iconImagesArg.id} className="icon-container">
+          <div key={imagesArg.id} className="icon-container">
             {/* アイコン画像 */}
             <Image
-              src={iconImagesArg.src}
-              alt={iconImagesArg.alt}
+              src={imagesArg.src}
+              alt={imagesArg.alt}
               width={500}
               height={120}
               className={`${iconAnimeStyles.iconImage} ${
-                clickedIconId === iconImagesArg.id
+                clickedIconId === imagesArg.id
                   ? iconAnimeStyles.iconAnimate
                   : ""
               }`}
               onClick={() => {
-                setClickedIconId(iconImagesArg.id);
+                setClickedIconId(imagesArg.id);
                 setTimeout(() => {
-                  clickRouter(iconImagesArg);
+                  clickRouter(imagesArg);
                 }, 900);
               }}
             />
             {/* ホバー画像 */}
-            <div className={`hover-image-${iconImagesArg.id}`}>
+            <div className={`hover-image-${imagesArg.id}`}>
               <Image
-                src={iconImagesArg.hover}
+                src={imagesArg.hover}
                 alt="ホバー画像"
                 width={100}
                 height={100}

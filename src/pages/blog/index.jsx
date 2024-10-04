@@ -33,7 +33,7 @@ const BlogIndex = () => {
       <IndexMain />
 
       <Head>
-        <title>ブログのインデックス</title>
+        <title>Blog</title>
         <meta name="description" content="ブログのインデックスページ。" />
         <meta property="og:title" content="ブログのインデックス" />
         <meta

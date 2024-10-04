@@ -45,7 +45,7 @@ const CourageIndex = () => {
       <IndexMain />
 
       <Head>
-        <title>勇気出る系リベラルアーツのインデックス</title>
+        <title>勇気出る系</title>
         <meta
           name="description"
           content="勇気出る系リベラルアーツのインデックスページ。"

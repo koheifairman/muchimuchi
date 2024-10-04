@@ -5,6 +5,9 @@ import nextSitemap from './next-sitemap.mjs';
 const nextConfig = {
   reactStrictMode: true,  // 必要に応じて他の設定も追加できます
   pageExtensions: ['js', 'jsx', 'mdx'],  // MDXファイルをページとしてサポート
+  images: {
+    domains: ['storage.googleapis.com'],  // google cloud strage
+  },
 };
 
 // withMDXとwithSitemapをチェーン（順序：MDX設定 => サイトマップ設定）

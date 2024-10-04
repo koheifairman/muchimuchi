@@ -9,23 +9,24 @@ const IndexMain = () => {
     {
       id: 1,
       path: "savagemind",
-      src: "/liberalarts/difficult/difficult-savagemind-icon.webp",
-      hover: "/hover/hover-levistrauss.webp",
-      alt: "「野生の思考」アイコン",
+      src: "",
+      hover:
+        "https://storage.googleapis.com/muchimuchi_bucket/hover/hover-levistrauss.webp",
+      alt: "野生の思考",
     },
     {
       id: 2,
       path: "consciousnessonly",
-      src: "/liberalarts/difficult/difficult-consciousnessonly-icon.webp.webp",
-      hover: "/hover/hover-genjo.webp",
-      alt: "「唯識の思想」アイコン",
+      src: "",
+      hover: "",
+      alt: "唯識の思想",
     },
     {
       id: 3,
       path: "nicomachean",
-      src: "/liberalarts/difficult/difficult-nicomachean-icon.webp.webp",
-      hover: "/hover/hover-aristotle.webp",
-      alt: "「ニコマコス倫理学」アイコン",
+      src: "",
+      hover: "",
+      alt: "ニコマコス倫理学",
     },
   ];
   // ステート

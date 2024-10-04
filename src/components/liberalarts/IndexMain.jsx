@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import iconAnimeStyles from "../../styles/anime/IconAnime.module.css";
 
-import youtubeIcon from "../../../public/about/about-mascot-icon.webp";
+// import youtubeIcon from "../../../public/about/about-mascot-icon.webp";
 
 const IndexMain = () => {
   // データ
@@ -11,23 +11,26 @@ const IndexMain = () => {
     {
       id: 1,
       path: "courage",
-      src: "/liberalarts/liberalarts-courage-icon.webp",
-      hover: "/hover/hover-frankl.webp",
-      alt: "勇気出る系のアイコン",
+      src: "https://storage.googleapis.com/muchimuchi_bucket/liberalarts/liberalarts-courage-icon.webp",
+      hover:
+        "https://storage.googleapis.com/muchimuchi_bucket/hover/hover-frankl.webp",
+      alt: "勇気出る系",
     },
     {
       id: 2,
       path: "difficult",
-      src: "/liberalarts/liberalarts-difficult-icon.webp",
-      hover: "/hover/hover-levistrauss.webp",
-      alt: "小難しい系のアイコン",
+      src: "https://storage.googleapis.com/muchimuchi_bucket/liberalarts/liberalarts-difficult-icon.webp",
+      hover:
+        "https://storage.googleapis.com/muchimuchi_bucket/hover/hover-levistrauss.webp",
+      alt: "小難しい系",
     },
     {
       id: 3,
       path: "interesting",
-      src: "/liberalarts/liberalarts-interesting-icon.webp",
-      hover: "/hover/hover-murakamiharuki.webp",
-      alt: "面白い系のアイコン",
+      src: "https://storage.googleapis.com/muchimuchi_bucket/liberalarts/liberalarts-interesting-icon.webp",
+      hover:
+        "https://storage.googleapis.com/muchimuchi_bucket/hover/hover-murakamiharuki.webp",
+      alt: "面白い系",
     },
   ];
   const labelParts = ["むちむち無知の知くん", "【リベラル・アーツ】"];

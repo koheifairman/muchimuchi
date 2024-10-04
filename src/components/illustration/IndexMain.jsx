@@ -13,19 +13,19 @@ const IndexMain = () => {
     {
       id: 1,
       label: "togashiyoshihiro",
-      src: "/illustration/togashi/artist-togashi.webp",
+      src: "https://storage.googleapis.com/muchimuchi_bucket/illustration/togashi/artist-togashi.webp",
       alt: "冨樫義博",
     },
     {
       id: 2,
       label: "kubotite",
-      src: "/illustration/kubo/artist-kubo.webp",
+      src: "https://storage.googleapis.com/muchimuchi_bucket/illustration/kubo/artist-kubo.webp",
       alt: "久保帯人",
     },
     {
       id: 3,
       label: "ishiguromasakazu",
-      src: "/illustration/ishiguro/artist-ishiguro.webp",
+      src: "https://storage.googleapis.com/muchimuchi_bucket/illustration/ishiguro/artist-ishiguro.webp",
       alt: "石黒正数",
     },
   ];

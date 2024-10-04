@@ -1,14 +1,7 @@
-// <Image />の仕様を利用
-// クリックでアニメ：useState、IndexAnimeStyle
-// ホバーでアニメ：IndexAnimeStyle
 import Image from "next/image";
 import { useState } from "react";
 import iconAnimeStyles from "../../styles/anime/IconAnime.module.css";
 import { useRouter } from "next/router";
-
-import mascotIcon from "../../../public/index/index-mascot-icon.webp";
-import welcomeBubble from "../../../public/Global/welcome-bubble.webp";
-import neverGiveup from "../../../public/Global/never-giveup.webp";
 
 const IndexMain = () => {
   // データ
@@ -16,22 +9,36 @@ const IndexMain = () => {
     {
       id: 1,
       label: "liberalarts",
-      src: "/index/index-liberalarts-icon.webp",
-      alt: "リベラル・アーツのアイコン",
+      src: "https://storage.googleapis.com/muchimuchi_bucket/index/index-liberalarts-icon.webp",
+      alt: "リベラル・アーツ",
     },
     {
       id: 2,
       label: "music",
-      src: "/index/index-music-icon.webp",
-      alt: "音楽のアイコン",
+      src: "https://storage.googleapis.com/muchimuchi_bucket/index/index-music-icon.webp",
+      alt: "音楽",
     },
     {
       id: 3,
       label: "illustration",
-      src: "/index/index-illustration-icon.webp",
-      alt: "イラストのアイコン",
+      src: "https://storage.googleapis.com/muchimuchi_bucket/index/index-illustration-icon.webp",
+      alt: "イラスト",
     },
   ];
+  const imageSrcs = {
+    mascot: {
+      src: "https://storage.googleapis.com/muchimuchi_bucket/index/index-mascot-icon.webp",
+      alt: "むちむちくん",
+    },
+    welcomebubble: {
+      src: "https://storage.googleapis.com/muchimuchi_bucket/global/welcome-bubble.webp",
+      alt: "ようこそ！",
+    },
+    nevergiveup: {
+      src: "https://storage.googleapis.com/muchimuchi_bucket/global/never-giveup.webp",
+      alt: "負けない...",
+    },
+  };
   // ステート
   const [clickedIconId, setClickedIconId] = useState();
   const [mascotIsClicked, setMascotIsClicked] = useState(false);
@@ -47,8 +54,6 @@ const IndexMain = () => {
   const clickRouter = (imageArg) => {
     router.push(`/${imageArg.label}`);
   };
-
-  // オブジェクトに渡すsrcは、このファイルからではなく/publicからの相対パス
 
   return (
     <div className="container">
@@ -78,7 +83,7 @@ const IndexMain = () => {
       {/* ---マスコット画像--- */}
       <div className="mascot-container" onClick={() => mascotClick()}>
         <Image
-          src={mascotIcon}
+          src={imageSrcs.mascot.src}
           alt="マスコット画像"
           width={600}
           height={271}
@@ -87,7 +92,7 @@ const IndexMain = () => {
         />
         <div className="hover-image">
           <Image
-            src={welcomeBubble}
+            src={imageSrcs.welcomebubble.src}
             alt="ホバー画像（ようこそ！）"
             width={150}
             height={80}
@@ -98,7 +103,12 @@ const IndexMain = () => {
         {/* {関数 && 〜}：関数がtrueの時、〜をレンダー */}
         {mascotIsClicked && (
           <div className="never-giveup">
-            <Image src={neverGiveup} alt="負けない..." width={50} height={20} />
+            <Image
+              src={imageSrcs.nevergiveup.src}
+              alt="負けない..."
+              width={50}
+              height={20}
+            />
           </div>
         )}
       </div>

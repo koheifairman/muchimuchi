@@ -70,7 +70,7 @@ const CouragePost = ({ frontMatter, mdxSource }) => {
       </div>
 
       <Head>
-        <title>勇気出る系リベラルアーツの記事</title>
+        <title>{frontMatter.title}</title>
         <meta property="og:type" content="article" />
         <meta
           name="description"

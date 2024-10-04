@@ -45,7 +45,7 @@ const DifficultIndex = () => {
       <Maintenance />
 
       <Head>
-        <title>小難しい系リベラルアーツのインデックス</title>
+        <title>小難しい系</title>
         <meta
           name="description"
           content="小難しい系リベラルアーツのインデックスページ。"

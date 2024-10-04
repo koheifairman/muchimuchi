@@ -3,18 +3,19 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import iconAnimeStyles from "../../styles/anime/IconAnime.module.css";
 
-import youtubeIcon from "../../../public/about/about-mascot-icon.webp";
-import hoverImage from "../../../public/hover/hover-noel.webp";
+// import youtubeIcon from "../../../public/about/about-mascot-icon.webp";
 
 const IndexMain = () => {
   // データ
   const image = {
     id: 1,
-    src: "/music/music-blog-icon.webp",
+    src: "https://storage.googleapis.com/muchimuchi_bucket/music/music-blog-icon.webp",
     path: "/blog/private",
-    alt: "Blogアイコン",
+    alt: "Blog",
   };
   const labelParts = ["初心者を見守る", "チャンネル"];
+  const hoverImageSrc =
+    "https://storage.googleapis.com/muchimuchi_bucket/hover/hover-noel.webp";
   // ステート
   const [clickedId, setClickedId] = useState(undefined);
   const router = useRouter();
@@ -58,7 +59,6 @@ const IndexMain = () => {
         {/* アイコン画像 */}
         <Image
           src={image.src}
-          key={image.id}
           alt={image.alt}
           width={500}
           height={120}
@@ -76,8 +76,8 @@ const IndexMain = () => {
         {/* ホバー画像 */}
         <div className="hover-image">
           <Image
-            src={hoverImage}
-            alt="ホバー画像"
+            src={hoverImageSrc}
+            alt="ノエル"
             width={100}
             height={100}
             layout="intrinsic"

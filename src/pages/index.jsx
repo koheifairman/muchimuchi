@@ -11,7 +11,7 @@ const index = () => {
       <IndexMain />
 
       <Head>
-        <title>ホームページ</title>
+        <title>むちむち無知の知くんのサイト</title>
         <meta name="description" content="ホームページ" />
         <meta property="og:title" content="ホームページ" />
         <meta property="og:description" content="ホームページ" />

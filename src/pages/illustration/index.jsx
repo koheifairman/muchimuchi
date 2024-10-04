@@ -34,7 +34,7 @@ const index = () => {
       <IndexMain />
 
       <Head>
-        <title>イラストのインデックス</title>
+        <title>イラスト</title>
         <meta name="description" content="イラストのインデックスページ。" />
         <meta property="og:title" content="イラストのインデックス" />
         <meta

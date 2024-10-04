@@ -45,7 +45,7 @@ const InterestingIndex = () => {
       <Maintenance />
 
       <Head>
-        <title>面白い系リベラルアーツのインデックス</title>
+        <title>面白い系</title>
         <meta
           name="description"
           content="面白い系リベラルアーツのインデックスページ。"

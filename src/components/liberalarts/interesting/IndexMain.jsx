@@ -9,23 +9,18 @@ const IndexMain = () => {
     {
       id: 1,
       path: "killingcommendatore",
-      src: "/liberalarts/interesting/interesting-killingcommendatore-icon.webp",
-      hover: "/hover/hover-murakamiharuki.webp",
-      alt: "「騎士団長殺し」アイコン",
+      src: "",
+      hover:
+        "https://storage.googleapis.com/muchimuchi_bucket/hover/hover-murakamiharuki.webp",
+      alt: "騎士団長殺し",
     },
     {
       id: 2,
       path: "sleep",
-      src: "/liberalarts/interesting/interesting-sleep-icon.webp",
-      hover: "/hover/hover-murakamiharuki.webp",
-      alt: "「ねむり」アイコン",
-    },
-    {
-      id: 3,
-      path: "nicomachean",
-      src: "/liberalarts/interesting/interesting-killingcommendatore-icon.webp",
-      hover: "/hover/hover-aristotle.webp",
-      alt: "「ニコマコス倫理学」アイコン",
+      src: "",
+      hover:
+        "https://storage.googleapis.com/muchimuchi_bucket/hover/hover-murakamiharuki.webp",
+      alt: "ねむり",
     },
   ];
   // ステート

@@ -69,7 +69,7 @@ const PrivatePost = ({ frontMatter, mdxSource }) => {
       </div>
 
       <Head>
-        <title>ブログ記事</title>
+        <title>{frontMatter.title}</title>
         <meta name="description" content="ブログ記事のページ。" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="ブログ記事" />

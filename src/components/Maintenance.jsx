@@ -1,14 +1,16 @@
 import Image from "next/image";
-
-import maintenanceImage from "../../public/maintenance.webp";
 import borderStyles from "@/styles/illustBorder.module.css";
 
 const Maintenance = () => {
+  // データ
+  const imageSrc =
+    "https://storage.googleapis.com/muchimuchi_bucket/global/maintenance.webp";
+
   return (
     <div className="container">
       <div className="image-container">
         <Image
-          src={maintenanceImage}
+          src={imageSrc}
           alt="メンテナンス画像"
           width={350}
           height={350}

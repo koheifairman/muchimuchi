@@ -101,7 +101,7 @@ const index = () => {
       <IllustrationMain images={images} />
 
       <Head>
-        <title>冨樫義博のイラスト</title>
+        <title>冨樫義博</title>
         <meta name="description" content="冨樫義博のイラストページ。" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="冨樫義博のイラスト" />

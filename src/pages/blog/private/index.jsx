@@ -23,9 +23,9 @@ export const getStaticProps = async () => {
       content, //例：oasisreunion.mdxの本文
     };
   });
-  // posts = [oasisreunion.mdx{slug:oasisreunion, frontMatter:〜（titleやdateなど）, content:〜（本文）}, ...]
+  // posts = {oasisreunion.mdx{slug:oasisreunion, frontMatter:〜（titleやdateなど）, content:〜（本文）}, ...}
 
-  // 配列postsをpropsにする
+  // postsをpropsにする
   return {
     props: {
       posts,
@@ -72,7 +72,7 @@ const PrivateIndex = ({ posts }) => {
       <IndexMain posts={posts} />
 
       <Head>
-        <title>ブログ記事一覧</title>
+        <title>私的なこと</title>
         <meta name="description" content="ブログ記事一覧のページ。" />
         <meta property="og:title" content="ブログ記事一覧" />
         <meta property="og:description" content="ブログ記事一覧のページ。" />

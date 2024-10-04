@@ -56,7 +56,7 @@ const index = () => {
       <IllustrationMain images={images} />
 
       <Head>
-        <title>石黒正数のイラスト</title>
+        <title>石黒正数</title>
         <meta name="description" content="石黒正数のイラストページ。" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="石黒正数のイラスト" />

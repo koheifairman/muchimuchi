@@ -2,54 +2,39 @@ import Image from "next/image";
 import { useState } from "react";
 import borderStyles from "@/styles/illustBorder.module.css";
 
-import administratorIcon from "../../../public/about/about-administrator-icon.webp";
-import mascotIcon from "../../../public/about/about-mascot-icon.webp";
-import neverGiveup from "../../../public/global/never-giveup.webp";
-
 const AboutMain = () => {
-  // STATE
+  // ステート
   const [mascotIsClicked, setMascotIsClicked] = useState(false);
-
-  // DATA
+  // 関数
   const mascotClick = () => {
     setMascotIsClicked(true);
     setTimeout(() => setMascotIsClicked(false), 1000);
   };
+  // データ
   const administratorTexts = [
     "読書、音楽、お絵描きが好き。",
     "リベラル・アーツを通じて、世界観は変幻自在だと目覚める。",
     "目覚めてしまったので、YouTube、Podcast、ブログ、イラストと、やってみたいことがたくさん。",
     "これら趣味活動のアウトプット置き場が欲しくて、このサイトを作ってみました！",
   ];
+  const administratorImageSrc =
+    "https://storage.googleapis.com/muchimuchi_bucket/about/about-administrator-icon.webp";
+  const mascotImageSrc =
+    "https://storage.googleapis.com/muchimuchi_bucket/about/about-mascot-icon.webp";
   const mascotTexts = [
-    {
-      id: 1,
-      text: "現代に甦りしソクラテスの化身。飽食時代の恩恵に与り、むちむちに太った。",
-    },
-    {
-      id: 2,
-      text: "本サイトのかわいいマスコット。",
-    },
-    {
-      id: 3,
-      text: "口ぐせは「",
-    },
-    {
-      id: 4,
-      text: "負けない…",
-    },
-    {
-      id: 5,
-      text: "」。",
-    },
+    "現代に甦りしソクラテスの化身。飽食時代の恩恵に与り、むちむちに太った。",
+    "本サイトのかわいいマスコット。",
+    "口ぐせは「負けない...」。",
   ];
+  const nevergiveupImageSrc =
+    "https://storage.googleapis.com/muchimuchi_bucket/global/never-giveup.webp";
 
   return (
     <div className="container">
       {/* 管理人 */}
       <div className="administrator-container">
         <Image
-          src={administratorIcon}
+          src={administratorImageSrc}
           alt="管理人のアイコン"
           width={350}
           height={350}
@@ -68,7 +53,7 @@ const AboutMain = () => {
       <div className="mascot-container">
         <div className="mascot-image" onClick={() => mascotClick()}>
           <Image
-            src={mascotIcon}
+            src={mascotImageSrc}
             alt="マスコットのアイコン"
             width={350}
             height={350}
@@ -79,7 +64,7 @@ const AboutMain = () => {
         {mascotIsClicked && (
           <div className="nevergiveup-image">
             <Image
-              src={neverGiveup}
+              src={nevergiveupImageSrc}
               alt="負けない..."
               width={50}
               height={50}
@@ -87,21 +72,10 @@ const AboutMain = () => {
             />
           </div>
         )}
-
         <div className="mascot-title">むちむち無知の知くん</div>
         <div className="mascot-text">
-          {mascotTexts.map((textArg) => {
-            if (textArg.id === 1 || textArg.id === 2) {
-              return <p key={textArg.id}>{textArg.text}</p>;
-            }
-            if (textArg.id === 4) {
-              return (
-                <span key={textArg.id} className="nevergiveup-text">
-                  {textArg.text}
-                </span>
-              );
-            }
-            return <span key={textArg.id}>{textArg.text}</span>;
+          {mascotTexts.map((textArg, index) => {
+            return <p key={index}>{textArg}</p>;
           })}
         </div>
       </div>
@@ -128,9 +102,8 @@ const AboutMain = () => {
         .administrator-text {
           width: 800px;
           border: 3px solid #a9a9a9;
+          border-radius: 12px;
           padding: 20px;
-        }
-        .administrator-text p {
           font-family: "Zen Maru Gothic";
           font-size: 20px;
           font-weight: 400;
@@ -162,16 +135,17 @@ const AboutMain = () => {
         .mascot-text {
           width: 800px;
           border: 3px solid #a9a9a9;
+          border-radius: 12px;
           padding: 20px;
           font-family: "Zen Maru Gothic";
           font-size: 20px;
           font-weight: 400;
         }
-        .nevergiveup-text {
-          font-family: "jtak00b";
-          font-size: 20px;
-          font-weight: 100;
-        }
+        // .nevergiveup-text {
+        //   font-family: "jtak00b";
+        //   font-size: 20px;
+        //   font-weight: 100;
+        // }
       `}</style>
     </div>
   );

@@ -87,7 +87,7 @@ const index = () => {
       <IllustrationMain images={images} />
 
       <Head>
-        <title>久保帯人のイラスト</title>
+        <title>久保帯人</title>
         <meta name="description" content="久保帯人のイラストページ。" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="久保帯人のイラスト" />

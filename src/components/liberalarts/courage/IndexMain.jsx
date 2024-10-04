@@ -9,23 +9,26 @@ const IndexMain = () => {
     {
       id: 1,
       path: "searchformeaning",
-      src: "/liberalarts/courage/courage-searchformeaning-icon.webp",
-      hover: "/hover/hover-frankl.webp",
-      alt: "「夜と霧」アイコン",
+      src: "https://storage.googleapis.com/muchimuchi_bucket/liberalarts/courage/courage-searchformeaning-icon.webp",
+      hover:
+        "https://storage.googleapis.com/muchimuchi_bucket/hover/hover-frankl.webp",
+      alt: "夜と霧",
     },
     {
       id: 2,
       path: "conquestofhappiness",
-      src: "/liberalarts/courage/courage-conquestofhappiness-icon.webp",
-      hover: "/hover/hover-russell.webp",
-      alt: "「幸福論」アイコン",
+      src: "https://storage.googleapis.com/muchimuchi_bucket/liberalarts/courage/courage-conquestofhappiness-icon.webp",
+      hover:
+        "https://storage.googleapis.com/muchimuchi_bucket/hover/hover-russell.webp",
+      alt: "幸福論",
     },
     {
       id: 3,
       path: "privateryan",
-      src: "/liberalarts/courage/courage-privateryan-icon.webp",
-      hover: "/hover/hover-tomhanks.webp",
-      alt: "「プライベート・ライアン」アイコン",
+      src: "https://storage.googleapis.com/muchimuchi_bucket/liberalarts/courage/courage-privateryan-icon.webp",
+      hover:
+        "https://storage.googleapis.com/muchimuchi_bucket/hover/hover-tomhanks.webp",
+      alt: "プライベート・ライアン",
     },
   ];
   // ステート
