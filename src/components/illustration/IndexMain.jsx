@@ -9,23 +9,26 @@ const IndexMain = () => {
   const [clickedIconId, setClickedIconId] = useState(undefined);
   const router = useRouter();
   // データ
-  const iconImages = [
+  const artistImages = [
     {
       id: 1,
       label: "togashiyoshihiro",
       src: "https://storage.googleapis.com/muchimuchi_bucket/illustration/togashi/artist-togashi.webp",
+      height: 57,
       alt: "冨樫義博",
     },
     {
       id: 2,
       label: "kubotite",
       src: "https://storage.googleapis.com/muchimuchi_bucket/illustration/kubo/artist-kubo.webp",
+      height: 51,
       alt: "久保帯人",
     },
     {
       id: 3,
       label: "ishiguromasakazu",
       src: "https://storage.googleapis.com/muchimuchi_bucket/illustration/ishiguro/artist-ishiguro.webp",
+      height: 86,
       alt: "石黒正数",
     },
   ];
@@ -39,7 +42,7 @@ const IndexMain = () => {
 
   return (
     <div className="container">
-      {iconImages.map((imageArg) => {
+      {artistImages.map((imageArg) => {
         return (
           <div
             key={imageArg.id}
@@ -55,8 +58,7 @@ const IndexMain = () => {
                   src={imageArg.src}
                   alt={imageArg.alt}
                   width={250}
-                  height={100}
-                  layout="intrinsic"
+                  height={imageArg.height}
                   className={`${iconAnimeStyles.iconImage} ${
                     clickedIconId === imageArg.id
                       ? iconAnimeStyles.iconAnimate

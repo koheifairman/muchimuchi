@@ -21,10 +21,10 @@ const App = ({ Component, pageProps }) => {
         />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="むちむち無知の知くんのサイト" />
-        <meta property="og:image" content="https://mywebsite.com/image.jpg" />
-        <link rel="canonical" href="https://mywebsite.com/" />
+        {/* <meta property="og:image" content="https://mywebsite.com/image.jpg" />
+        <link rel="canonical" href="https://mywebsite.com/" /> */}
 
-        <script type="application/ld+json">
+        {/* <script type="application/ld+json">
           {`
   {
     "@context": "https://schema.org",
@@ -33,7 +33,7 @@ const App = ({ Component, pageProps }) => {
     "url": "https://mywebsite.com/"
   }
 `}
-        </script>
+        </script> */}
         <style>
           @import
           url(https://fonts.googleapis.com/css2?family=Abel&display=swap);

@@ -62,7 +62,6 @@ const IndexMain = () => {
           alt={image.alt}
           width={500}
           height={120}
-          layout="intrinsic"
           className={`${iconAnimeStyles.iconImage} ${
             clickedId === image.id ? iconAnimeStyles.iconAnimate : ""
           }`}
@@ -75,13 +74,7 @@ const IndexMain = () => {
         />
         {/* ホバー画像 */}
         <div className="hover-image">
-          <Image
-            src={hoverImageSrc}
-            alt="ノエル"
-            width={100}
-            height={100}
-            layout="intrinsic"
-          />
+          <Image src={hoverImageSrc} alt="ノエル" width={95} height={100} />
         </div>
       </div>
       <style jsx>{`

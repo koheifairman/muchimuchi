@@ -37,9 +37,10 @@ const breadcrumbsItems = [
 const images = [
   {
     id: 1,
-    src: "/illustration/ishiguro/ishiguro-1.webp",
+    src: "https://storage.googleapis.com/muchimuchi_bucket/illustration/ishiguro/ishiguro-1.webp",
     alt: "そうかいそうかい",
     date: "2024/9/14",
+    height: 687,
     comment:
       "シーサイドがメイド喫茶と化した経緯と二人の関係性をテンポよく描いた1ページ。「儲かるらしい」からやるばあちゃんの現金さが好きです笑。歳とってもたくましい根性に素朴な親しみを感じます。",
   },
@@ -61,13 +62,13 @@ const index = () => {
         <meta property="og:type" content="article" />
         <meta property="og:title" content="石黒正数のイラスト" />
         <meta property="og:description" content="石黒正数のイラストページ。" />
-        <meta property="og:url" content="https://mywebsite.com/" />
-        <meta property="og:image" content="https://mywebsite.com/image.jpg" />
+        {/* <meta property="og:url" content="https://mywebsite.com/" />
+        <meta property="og:image" content="https://mywebsite.com/image.jpg" /> */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="むちむち無知の知くんのサイト" />
         <meta name="twitter:description" content="石黒正数のイラストページ。" />
-        <meta name="twitter:image" content="https://mywebsite.com/image.jpg" />
-        <link rel="canonical" href="https://mywebsite.com/" />
+        {/* <meta name="twitter:image" content="https://mywebsite.com/image.jpg" />
+        <link rel="canonical" href="https://mywebsite.com/" /> */}
       </Head>
     </div>
   );

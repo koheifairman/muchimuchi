@@ -85,9 +85,8 @@ const IndexMain = () => {
         <Image
           src={imageSrcs.mascot.src}
           alt="マスコット画像"
-          width={600}
+          width={599}
           height={271}
-          layout="instrinct"
           onClick={() => mascotClick()}
         />
         <div className="hover-image">
@@ -95,8 +94,7 @@ const IndexMain = () => {
             src={imageSrcs.welcomebubble.src}
             alt="ホバー画像（ようこそ！）"
             width={150}
-            height={80}
-            layout="instrinct"
+            height={85}
             onClick={() => mascotClick()}
           />
         </div>
@@ -113,8 +111,6 @@ const IndexMain = () => {
         )}
       </div>
 
-      {/* justify-content: space-between; // 両端を埋めつつ均等に配置*/}
-      {/* mascot-container（親）をrelative、welcome-bubbleとnever-giveup（子）をabsolute */}
       <style jsx>{`
         .icon-container {
           width: 900px;

@@ -12,6 +12,7 @@ const IndexMain = () => {
       src: "",
       hover:
         "https://storage.googleapis.com/muchimuchi_bucket/hover/hover-levistrauss.webp",
+      hoverWidth: 124,
       alt: "野生の思考",
     },
     {
@@ -19,6 +20,7 @@ const IndexMain = () => {
       path: "consciousnessonly",
       src: "",
       hover: "",
+      hoverWidth: 124,
       alt: "唯識の思想",
     },
     {
@@ -26,6 +28,7 @@ const IndexMain = () => {
       path: "nicomachean",
       src: "",
       hover: "",
+      hoverWidth: 124,
       alt: "ニコマコス倫理学",
     },
   ];
@@ -48,7 +51,6 @@ const IndexMain = () => {
               alt={imageArg.alt}
               width={500}
               height={120}
-              layout="intrinsic"
               className={`${iconAnimeStyles.iconImage} ${
                 clickedIconId === imageArg.id ? iconAnimeStyles.iconAnimate : ""
               }`}
@@ -64,9 +66,8 @@ const IndexMain = () => {
               <Image
                 src={imageArg.hover}
                 alt="ホバー画像"
-                width={100}
+                width={imageArg.hoverWidth}
                 height={100}
-                layout="intrinsic"
               />
             </div>
           </div>

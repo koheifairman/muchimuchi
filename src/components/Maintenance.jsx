@@ -13,8 +13,7 @@ const Maintenance = () => {
           src={imageSrc}
           alt="メンテナンス画像"
           width={350}
-          height={350}
-          layout="intrinsic"
+          height={358}
           className={borderStyles.image}
         />
       </div>

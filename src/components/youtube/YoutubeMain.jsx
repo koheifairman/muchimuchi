@@ -39,7 +39,6 @@ const YoutubeMain = () => {
                   alt={itemArg.alt}
                   width={150}
                   height={150}
-                  layout="intrinsic"
                 />
               </a>
               <div className="label">

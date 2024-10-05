@@ -24,7 +24,7 @@ const AboutMain = () => {
   const mascotTexts = [
     "現代に甦りしソクラテスの化身。飽食時代の恩恵に与り、むちむちに太った。",
     "本サイトのかわいいマスコット。",
-    "口ぐせは「負けない...」。",
+    "口ぐせは「　　　　　」。",
   ];
   const nevergiveupImageSrc =
     "https://storage.googleapis.com/muchimuchi_bucket/global/never-giveup.webp";
@@ -37,8 +37,7 @@ const AboutMain = () => {
           src={administratorImageSrc}
           alt="管理人のアイコン"
           width={350}
-          height={350}
-          layout="intrinsic"
+          height={298}
           className={borderStyles.image}
         />
         <div className="administrator-title">管理人</div>
@@ -55,9 +54,8 @@ const AboutMain = () => {
           <Image
             src={mascotImageSrc}
             alt="マスコットのアイコン"
-            width={350}
+            width={202}
             height={350}
-            layout="intrinsic"
             onClick={() => mascotClick()}
           />
         </div>
@@ -67,8 +65,7 @@ const AboutMain = () => {
               src={nevergiveupImageSrc}
               alt="負けない..."
               width={50}
-              height={50}
-              layout="intrinsic"
+              height={20}
             />
           </div>
         )}
@@ -77,6 +74,14 @@ const AboutMain = () => {
           {mascotTexts.map((textArg, index) => {
             return <p key={index}>{textArg}</p>;
           })}
+        </div>
+        <div className="nevergiveup-text ">
+          <Image
+            src={nevergiveupImageSrc}
+            alt="負けない..."
+            width={100}
+            height={26}
+          />
         </div>
       </div>
 
@@ -140,12 +145,14 @@ const AboutMain = () => {
           font-family: "Zen Maru Gothic";
           font-size: 20px;
           font-weight: 400;
+          z-index: 1;
         }
-        // .nevergiveup-text {
-        //   font-family: "jtak00b";
-        //   font-size: 20px;
-        //   font-weight: 100;
-        // }
+        .nevergiveup-text {
+          position: absolute;
+          bottom: 38px;
+          left: 100px;
+          z-index: 1;
+        }
       `}</style>
     </div>
   );

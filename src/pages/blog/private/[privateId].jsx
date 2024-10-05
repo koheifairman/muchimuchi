@@ -74,13 +74,13 @@ const PrivatePost = ({ frontMatter, mdxSource }) => {
         <meta property="og:type" content="article" />
         <meta property="og:title" content="ブログ記事" />
         <meta property="og:description" content="ブログ記事のページ。" />
-        <meta property="og:url" content="https://mywebsite.com/" />
-        <meta property="og:image" content="https://mywebsite.com/image.jpg" />
+        {/* <meta property="og:url" content="https://mywebsite.com/" />
+        <meta property="og:image" content="https://mywebsite.com/image.jpg" /> */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="むちむち無知の知くんのサイト" />
         <meta name="twitter:description" content="ブログ記事のページ。" />
-        <meta name="twitter:image" content="https://mywebsite.com/image.jpg" />
-        <link rel="canonical" href="https://mywebsite.com/" />
+        {/* <meta name="twitter:image" content="https://mywebsite.com/image.jpg" />
+        <link rel="canonical" href="https://mywebsite.com/" /> */}
       </Head>
     </div>
   );

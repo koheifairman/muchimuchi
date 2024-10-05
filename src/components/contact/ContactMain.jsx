@@ -7,13 +7,7 @@ const ContactMain = () => {
     <div className="container">
       <div className="rectangle">
         <div className="x-image">
-          <Image
-            src={xImageSrc}
-            alt="Xアイコン"
-            width={50}
-            height={50}
-            layout="intrinsic"
-          />
+          <Image src={xImageSrc} alt="Xアイコン" width={50} height={57} />
         </div>
         <div className="text">
           Mail：osigoto0817@gmail.com

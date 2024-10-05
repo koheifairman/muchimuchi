@@ -15,6 +15,7 @@ const IndexMain = () => {
       src: "https://storage.googleapis.com/muchimuchi_bucket/blog/blog-liberalarts-icon.webp",
       hover:
         "https://storage.googleapis.com/muchimuchi_bucket/about/about-mascot-icon.webp",
+      hoverWidth: 58,
       alt: "リベラル・アーツ",
     },
     {
@@ -23,6 +24,7 @@ const IndexMain = () => {
       src: "https://storage.googleapis.com/muchimuchi_bucket/blog/blog-private-icon.webp",
       hover:
         "https://storage.googleapis.com/muchimuchi_bucket/hover/hover-noel.webp",
+      hoverWidth: 95,
       alt: "私的なこと",
     },
   ];
@@ -63,9 +65,8 @@ const IndexMain = () => {
               <Image
                 src={imagesArg.hover}
                 alt="ホバー画像"
-                width={100}
+                width={imagesArg.hoverWidth}
                 height={100}
-                layout="intrinsic"
               />
             </div>
           </div>

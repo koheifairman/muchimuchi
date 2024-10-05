@@ -12,6 +12,7 @@ const IndexMain = () => {
       src: "",
       hover:
         "https://storage.googleapis.com/muchimuchi_bucket/hover/hover-murakamiharuki.webp",
+      hoverWidth: 124,
       alt: "騎士団長殺し",
     },
     {
@@ -20,6 +21,7 @@ const IndexMain = () => {
       src: "",
       hover:
         "https://storage.googleapis.com/muchimuchi_bucket/hover/hover-murakamiharuki.webp",
+      hoverWidth: 124,
       alt: "ねむり",
     },
   ];
@@ -42,7 +44,6 @@ const IndexMain = () => {
               alt={imageArg.alt}
               width={500}
               height={120}
-              layout="intrinsic"
               className={`${iconAnimeStyles.iconImage} ${
                 clickedIconId === imageArg.id ? iconAnimeStyles.iconAnimate : ""
               }`}
@@ -58,9 +59,8 @@ const IndexMain = () => {
               <Image
                 src={imageArg.hover}
                 alt="ホバー画像"
-                width={100}
+                width={imageArg.hoverWidth}
                 height={100}
-                layout="intrinsic"
               />
             </div>
           </div>

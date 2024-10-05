@@ -12,6 +12,7 @@ const IndexMain = () => {
       src: "https://storage.googleapis.com/muchimuchi_bucket/liberalarts/courage/courage-searchformeaning-icon.webp",
       hover:
         "https://storage.googleapis.com/muchimuchi_bucket/hover/hover-frankl.webp",
+      hoverWidth: 132,
       alt: "夜と霧",
     },
     {
@@ -20,6 +21,7 @@ const IndexMain = () => {
       src: "https://storage.googleapis.com/muchimuchi_bucket/liberalarts/courage/courage-conquestofhappiness-icon.webp",
       hover:
         "https://storage.googleapis.com/muchimuchi_bucket/hover/hover-russell.webp",
+      hoverWidth: 142,
       alt: "幸福論",
     },
     {
@@ -28,6 +30,7 @@ const IndexMain = () => {
       src: "https://storage.googleapis.com/muchimuchi_bucket/liberalarts/courage/courage-privateryan-icon.webp",
       hover:
         "https://storage.googleapis.com/muchimuchi_bucket/hover/hover-tomhanks.webp",
+      hoverWidth: 142,
       alt: "プライベート・ライアン",
     },
   ];
@@ -50,7 +53,6 @@ const IndexMain = () => {
               alt={imageArg.alt}
               width={500}
               height={120}
-              layout="intrinsic"
               className={`${iconAnimeStyles.iconImage} ${
                 clickedIconId === imageArg.id ? iconAnimeStyles.iconAnimate : ""
               }`}
@@ -66,9 +68,8 @@ const IndexMain = () => {
               <Image
                 src={imageArg.hover}
                 alt="ホバー画像"
-                width={100}
+                width={imageArg.hoverWidth}
                 height={100}
-                layout="intrinsic"
               />
             </div>
           </div>

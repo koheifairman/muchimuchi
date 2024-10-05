@@ -13,8 +13,7 @@ const IllustrationMain = ({ images, artist }) => {
                 src={imagesArg.src}
                 alt={imagesArg.alt}
                 width={400}
-                height={400}
-                layout="intrinsic"
+                height={imagesArg.height}
                 className={borderStyles.image}
               />
               <div className="date">更新：{imagesArg.date}</div>

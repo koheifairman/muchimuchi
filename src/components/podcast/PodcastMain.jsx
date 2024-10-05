@@ -18,7 +18,6 @@ const PodcastMain = () => {
           alt="Podcastアイコン"
           width={150}
           height={150}
-          layout="intrinsic"
         />
       </a>
       {labelParts.map((labelArg, index) => {
