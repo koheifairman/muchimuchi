@@ -8,24 +8,33 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import breadcrumbsStyles from "@/styles/breadcrumbs/breadcrumbs2.module.css";
 import IndexMain from "../../../components/blog/private/IndexMain";
 
+// fileDirectory = /~/articles/blogディレクトリ
+// files =　['oasisreunion.mdx', ...]
+// filePath = ["/~/articles/blog/oasisreunion.mdx", ...]
+// fileContent = filePathの中身全体
+// data = fileContentのフロントマター部分
+// content = fileContentの本文部分
+// slug = ['oasisreunion', ...]
+// frontMatter = data
+// content = content
+// posts = {oasisreunion.mdx{slug:oasisreunion, frontMatter:〜, content:〜}, ...}
+// postsをプロップスにする
 export const getStaticProps = async () => {
   const fileDirectory = path.join(process.cwd(), "articles", "blog");
-  const files = fs.readdirSync(fileDirectory); //['oasisreunion.mdx', ...]取得
+  const files = fs.readdirSync(fileDirectory);
 
   const posts = files.map((fileArg) => {
-    const filePath = path.join(fileDirectory, fileArg); // ['/Users/takiguchikouhei/dev/blog/src/pages/blog/private/articles/oasisreunion.mdx', ...]取得
-    const fileContent = fs.readFileSync(filePath, "utf-8"); //readFileSync：指定パスのファイル内容を同期的に文字列として読み込む
-    const { data, content } = matter(fileContent); // fileContent（例：oasisreunion.mdxを読み込んだ中身）を、data（フロントマター）とcontent（本文）で取得
+    const filePath = path.join(fileDirectory, fileArg);
+    const fileContent = fs.readFileSync(filePath, "utf-8");
+    const { data, content } = matter(fileContent);
 
     return {
-      slug: fileArg.replace(".mdx", ""), //「.mdx」を削除したもの（例：oasisreunion）。パスの最後の部分
-      frontMatter: data, //例：oasisreunion.mdxのフロントマター
-      content, //例：oasisreunion.mdxの本文
+      slug: fileArg.replace(".mdx", ""),
+      frontMatter: data,
+      content,
     };
   });
-  // posts = {oasisreunion.mdx{slug:oasisreunion, frontMatter:〜（titleやdateなど）, content:〜（本文）}, ...}
 
-  // postsをpropsにする
   return {
     props: {
       posts,

@@ -36,7 +36,7 @@ const music = () => {
         <title>音楽</title>
         {/* <meta name="description" content="音楽のページ。" />
         <meta property="og:title" content="音楽" /> */}
-        <meta property="og:description" content="音楽のページ。" />
+        {/* <meta property="og:description" content="音楽のページ。" /> */}
         {/* <meta property="og:url" content="https://mywebsite.com/" />
         <meta property="og:image" content="https://mywebsite.com/image.jpg" /> */}
         {/* <meta name="twitter:card" content="summary_large_image" />

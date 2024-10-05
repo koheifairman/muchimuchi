@@ -1,5 +1,5 @@
-import fs from "fs"; // fs：Node.jsのモジュール。ファイルシステム。ファイルやディレクトリを扱う（読み込み、作成、削除、移動など）
-import path from "path"; //path：Node.jsのモジュール。ファイルやディレクトリのパス操作をする関数（joinなど）を提供する
+import fs from "fs"; // fs：Node.jsのモジュール。ファイルシステム。
+import path from "path"; //path：Node.jsのモジュール。
 import matter from "gray-matter"; //matter：mdファイルのフロントマターをパース（解析、変換）する関数
 import { serialize } from "next-mdx-remote/serialize"; //mdxの中身をNext.jsでレンダリングできる形式に、サーバーサイドでシリアライズ（変換）する関数
 import { MDXRemote } from "next-mdx-remote"; //シリアライズされたMDXをクライアントサイドでレンダリングするコンポーネント
@@ -10,43 +10,54 @@ import GlobalHeader from "@/components/GlobalHeader";
 import markdownStyles from "../../../styles/markdown.module.css";
 import Maintenance from "@/components/Maintenance.jsx";
 
-// getStaticPaths：クライアントサイドで事前に静的生成したいページのパスを指定
+// getStaticPaths：クライアントサイドで事前に静的生成するページパスを指定
+// path.join('a','b',...)：パス（/a/b/...）を動的生成
+// fileDirectory = /~/articles/blogディレクトリ
+// files = ['oasisreunon.mdx', ...]
+// fileName = ['oasisreunon', ...]
+// paths = {params: { privateId: 'oasisreunon' }, ...}
+// paths（getStaticPathsの戻り値） = [{ params: { privateId: 'oasisreunon' } },{ params: { privateId: ...} }]
+// fallback: false：指定されていないページ（pathsに含まれないパス）にアクセスされたら404ページ表示
 export const getStaticPaths = async () => {
   const fileDirectory = path.join(process.cwd(), "articles", "blog");
-  // path.join('a','b',...)：パス（/a/b/...）を動的生成
-  //絶対パス（/Users/takiguchikouhei/dev/blog/articles/blog）を取得
-
-  const files = fs.readdirSync(fileDirectory); //パス内のファイルをで配列で取得（例：['oasisreunon.mdx', ...]）
+  const files = fs.readdirSync(fileDirectory);
 
   const paths = files.map((filesArg) => {
-    const fileName = filesArg.replace(/\.mdx$/, ""); //「.mdx」削除（例：['oasisreunon', ...]）
+    const fileName = filesArg.replace(/\.mdx$/, "");
     return {
-      params: { privateId: fileName }, //例：{ privateId: 'oasisreunon' }
+      params: { privateId: fileName },
     };
   });
 
   return {
-    paths, //paths：パスオブジェクトの配列（例：[{ params: { privateId: 'oasisreunon' } },{ params: { privateId: ...} }]）
-    fallback: false, //指定されていないページ（pathsに含まれないパス）にアクセスされたら404ページを表示
+    paths,
+    fallback: false,
   };
 };
 
+// filePath = ["/~/articles/blog/oasisreunion.mdx", ...]
+// fileContent = ${params.privateId}.mdxの中身全体
+// data = fileContentのフロントマター部分
+// content = fileContentの本文部分
+// mdxSource = contentをJSXに変換
+// frontMatter（プロップス） =　data
+// mdxSource（プロップス） = mdxSource
 export const getStaticProps = async ({ params }) => {
   const filePath = path.join(
     process.cwd(),
     "articles",
     "blog",
     `${params.privateId}.mdx`,
-  ); //${params.privateId}.mdxを取得
+  );
 
-  const fileContent = fs.readFileSync(filePath, "utf-8"); //${params.privateId}.mdxの中身を読み込む
-  const { data, content } = matter(fileContent); //中身をdata（フロントマター）とcontent（本文）に分ける
-  const mdxSource = await serialize(content); // content（本文）をJSXに変換
+  const fileContent = fs.readFileSync(filePath, "utf-8");
+  const { data, content } = matter(fileContent);
+  const mdxSource = await serialize(content);
 
   return {
     props: {
-      frontMatter: data, //props名「frontMatter」=data（フロントマター）
-      mdxSource, //props名「mdxSource」=mdxSource
+      frontMatter: data,
+      mdxSource,
     },
   };
 };
