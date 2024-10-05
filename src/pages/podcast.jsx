@@ -34,14 +34,14 @@ const podcast = () => {
 
       <Head>
         <title>Podcast</title>
-        <meta name="description" content="Podcastのページ。" />
-        <meta property="og:title" content="Podcast" />
-        <meta property="og:description" content="Podcastのページ。" />
+        {/* <meta name="description" content="Podcastのページ。" />
+        <meta property="og:title" content="Podcast" /> */}
+        {/* <meta property="og:description" content="Podcastのページ。" /> */}
         {/* <meta property="og:url" content="https://mywebsite.com/" />
         <meta property="og:image" content="https://mywebsite.com/image.jpg" /> */}
-        <meta name="twitter:card" content="summary_large_image" />
+        {/* <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="むちむち無知の知くんのサイト" />
-        <meta name="twitter:description" content="Podcastのページ。" />
+        <meta name="twitter:description" content="Podcastのページ。" /> */}
         {/* <meta name="twitter:image" content="https://mywebsite.com/image.jpg" />
         <link rel="canonical" href="https://mywebsite.com/" /> */}
       </Head>

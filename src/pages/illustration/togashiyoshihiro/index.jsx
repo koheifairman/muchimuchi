@@ -109,7 +109,7 @@ const index = () => {
 
       <Head>
         <title>冨樫義博</title>
-        <meta name="description" content="冨樫義博のイラストページ。" />
+        {/* <meta name="description" content="冨樫義博のイラストページ。" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="冨樫義博のイラスト" />
         <meta property="og:description" content="冨樫義博のイラストページ。" />
@@ -119,7 +119,7 @@ const index = () => {
         <meta name="twitter:title" content="むちむち無知の知くんのサイト" />
         <meta name="twitter:description" content="冨樫義博のイラストページ。" />
         <meta name="twitter:image" content="https://mywebsite.com/image.jpg" />
-        <link rel="canonical" href="https://mywebsite.com/" />
+        <link rel="canonical" href="https://mywebsite.com/" /> */}
       </Head>
     </div>
   );

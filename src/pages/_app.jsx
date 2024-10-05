@@ -5,13 +5,13 @@ const App = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {/* <meta name="viewport" content="width=device-width, initial-scale=1.0" /> */}
         <link
           rel="icon"
           href="https://storage.googleapis.com/muchimuchi_bucket/favicon.ico/favicon.webp"
         />
         <html lang="ja" />
-        <meta
+        {/* <meta
           name="description"
           content="リベラルアーツ、音楽、イラストなど、管理人の趣味活動をまとめたサイト。マスコットは「むちむち無知の知くん」。"
         />
@@ -20,7 +20,7 @@ const App = ({ Component, pageProps }) => {
           content="リベラルアーツ, 音楽, イラスト, ブログ"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="むちむち無知の知くんのサイト" />
+        <meta property="og:site_name" content="むちむち無知の知くんのサイト" /> */}
         {/* <meta property="og:image" content="https://mywebsite.com/image.jpg" />
         <link rel="canonical" href="https://mywebsite.com/" /> */}
 

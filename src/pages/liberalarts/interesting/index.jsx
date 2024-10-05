@@ -46,7 +46,7 @@ const InterestingIndex = () => {
 
       <Head>
         <title>面白い系</title>
-        <meta
+        {/* <meta
           name="description"
           content="面白い系リベラルアーツのインデックスページ。"
         />
@@ -67,7 +67,7 @@ const InterestingIndex = () => {
           content="面白い系リベラルアーツのインデックスページ。"
         />
         <meta name="twitter:image" content="https://mywebsite.com/image.jpg" />
-        <link rel="canonical" href="https://mywebsite.com/" />
+        <link rel="canonical" href="https://mywebsite.com/" /> */}
       </Head>
     </div>
   );
