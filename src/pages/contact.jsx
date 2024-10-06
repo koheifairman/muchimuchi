@@ -34,16 +34,6 @@ const contact = () => {
 
       <Head>
         <title>Contact</title>
-        {/* <meta name="description" content="連絡先ページ。" />
-        <meta property="og:title" content="Contact" />
-        <meta property="og:description" content="連絡先ページ。" /> */}
-        {/* <meta property="og:url" content="https://mywebsite.com/" />
-        <meta property="og:image" content="https://mywebsite.com/image.jpg" /> */}
-        {/* <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="むちむち無知の知くんのサイト" />
-        <meta name="twitter:description" content="連絡先ページ。" /> */}
-        {/* <meta name="twitter:image" content="https://mywebsite.com/image.jpg" />
-        <link rel="canonical" href="https://mywebsite.com/" /> */}
       </Head>
     </div>
   );

@@ -11,43 +11,54 @@ import GlobalHeader from "@/components/GlobalHeader";
 import markdownStyles from "../../../styles/markdown.module.css";
 import Maintenance from "@/components/Maintenance.jsx";
 
-// getStaticPaths：クライアントサイドで事前に静的生成したいページのパスを指定
+// getStaticPaths：クライアントサイドで事前に静的生成するページパスを指定
+// path.join('a','b',...)：パス（/a/b/...）を動的生成
+// fileDirectory = /~/articles/liberalarts
+// files = ['privateryan.mdx', ...]
+// fileName = ['privateryan', ...]
+// paths = {params: { courageId: 'privateryan'}, { params: { courageId: ...}}
+// paths（getStaticPaths戻り値） = [{ params: { courageId: 'privateryan' } },{ params: { courageId: ...} }]
+// fallback: false：指定されていないパス（pathsに含まれないパス）にアクセスされたら404ページ表示
 export const getStaticPaths = async () => {
   const fileDirectory = path.join(process.cwd(), "articles", "liberalarts");
-  // path.join('a','b',...)：パス（/a/b/...）を動的生成
-  //絶対パス（/Users/takiguchikouhei/dev/blog/src/pages/blog/private/articles）を取得
-
-  const files = fs.readdirSync(fileDirectory); //パス内のファイルをで配列で取得（例：['privateryan.mdx', ...]）
+  const files = fs.readdirSync(fileDirectory);
 
   const paths = files.map((filesArg) => {
-    const fileName = filesArg.replace(/\.mdx$/, ""); //「.mdx」削除（例：['privateryan', ...]）
+    const fileName = filesArg.replace(/\.mdx$/, "");
     return {
-      params: { courageId: fileName }, //例：{ courageId: 'privateryan' }
+      params: { courageId: fileName },
     };
   });
 
   return {
-    paths, //paths：パスオブジェクトの配列（例：[{ params: { courageId: 'privateryan' } },{ params: { courageId: ...} }]）
-    fallback: false, //指定されていないページ（pathsに含まれないパス）にアクセスされたら404ページを表示
+    paths,
+    fallback: false,
   };
 };
 
+// filePath = /~/articles/liberalarts/${params.courageId}.mdx
+// fileContent = ${params.courageId}.mdxの中身全体
+// data = fileContentのフロントマター部分
+// content = fileContentの本文部分
+// mdxSource = JSXに変換したcontent
+// frontMatter（プロップス） = data
+// mdxSource（プロップス） = mdxSource
 export const getStaticProps = async ({ params }) => {
   const filePath = path.join(
     process.cwd(),
     "articles",
     "liberalarts",
     `${params.courageId}.mdx`,
-  ); //${params.courageId}.mdxを取得
+  );
 
-  const fileContent = fs.readFileSync(filePath, "utf-8"); //${params.courageId}.mdxの中身を読み込む
-  const { data, content } = matter(fileContent); //中身をdata（フロントマター）とcontent（本文）に分ける
-  const mdxSource = await serialize(content); // content（本文）をJSXに変換
+  const fileContent = fs.readFileSync(filePath, "utf-8");
+  const { data, content } = matter(fileContent);
+  const mdxSource = await serialize(content);
 
   return {
     props: {
-      frontMatter: data, //props名「frontMatter」=data（フロントマター）
-      mdxSource, //props名「mdxSource」=mdxSource
+      frontMatter: data,
+      mdxSource,
     },
   };
 };
@@ -71,26 +82,6 @@ const CouragePost = ({ frontMatter, mdxSource }) => {
 
       <Head>
         <title>{frontMatter.title}</title>
-        {/* <meta property="og:type" content="article" />
-        <meta
-          name="description"
-          content="勇気出る系リベラルアーツの記事ページ。"
-        />
-        <meta property="og:title" content="勇気出る系リベラルアーツの記事" />
-        <meta
-          property="og:description"
-          content="勇気出る系リベラルアーツの記事ページ。"
-        /> */}
-        {/* <meta property="og:url" content="https://mywebsite.com/" />
-        <meta property="og:image" content="https://mywebsite.com/image.jpg" /> */}
-        {/* <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="むちむち無知の知くんのサイト" />
-        <meta
-          name="twitter:description"
-          content="勇気出る系リベラルアーツの記事ページ。"
-        /> */}
-        {/* <meta name="twitter:image" content="https://mywebsite.com/image.jpg" />
-        <link rel="canonical" href="https://mywebsite.com/" /> */}
       </Head>
     </div>
   );
