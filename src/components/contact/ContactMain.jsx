@@ -34,6 +34,7 @@ const ContactMain = () => {
           position: relative;
           width: 500px;
           border: 3px solid #a9a9a9;
+          border-radius: 12px;
           z-index: 1;
         }
         .x-image {

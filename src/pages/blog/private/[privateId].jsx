@@ -54,8 +54,6 @@ export const getStaticProps = async ({ params }) => {
   const { data, content } = matter(fileContent);
   const mdxSource = await serialize(content);
 
-  console.log(fileContent);
-
   return {
     props: {
       frontMatter: data,

@@ -88,11 +88,12 @@ const IndexMain = () => {
           width={599}
           height={271}
           onClick={() => mascotClick()}
+          priority // LCP改善
         />
         <div className="hover-image">
           <Image
             src={imageSrcs.welcomebubble.src}
-            alt="ホバー画像（ようこそ！）"
+            alt="ようこそ！"
             width={150}
             height={85}
             onClick={() => mascotClick()}

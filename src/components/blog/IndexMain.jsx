@@ -48,6 +48,7 @@ const IndexMain = () => {
               alt={imagesArg.alt}
               width={500}
               height={120}
+              priority
               className={`${iconAnimeStyles.iconImage} ${
                 clickedIconId === imagesArg.id
                   ? iconAnimeStyles.iconAnimate
