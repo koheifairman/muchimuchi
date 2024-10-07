@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sitemap": "next-sitemap"
   },
   "type": "module",
   "_comment": "↑ next-sitemap.mjsをESM（最新の標準モジュールシステム）として正しく扱うため、Node.jsがESMを使用することを明示的に示す",
