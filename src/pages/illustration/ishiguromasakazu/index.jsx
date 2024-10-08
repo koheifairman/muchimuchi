@@ -39,7 +39,7 @@ const images = [
     id: 1,
     src: "https://storage.googleapis.com/muchimuchi_bucket/illustration/ishiguro/ishiguro-1.webp",
     alt: "そうかいそうかい",
-    date: "2024/9/14",
+    date: "2024/10/7",
     height: 687,
     comment:
       "シーサイドがメイド喫茶と化した経緯と二人の関係性をテンポよく描いた1ページ。「儲かるらしい」からやるばあちゃんの現金さが好きです笑。歳とってもたくましい根性に素朴な親しみを感じます。",
