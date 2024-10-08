@@ -95,7 +95,7 @@ const PrivatePost = ({ frontMatter, mdxSource }) => {
         />
         <meta
           property="og:url"
-          content={`https://muchimuchi.vercel.app/blog/private/${params.privateId}`}
+          content={`https://muchimuchi.vercel.app/blog/private/${frontMatter.slug}`}
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
@@ -112,7 +112,7 @@ const PrivatePost = ({ frontMatter, mdxSource }) => {
         />
         <link
           rel="canonical"
-          href={`https://muchimuchi.vercel.app/blog/private/${params.privateId}`}
+          href={`https://muchimuchi.vercel.app/blog/private/${frontMatter.slug}`}
         />
       </Head>
     </div>

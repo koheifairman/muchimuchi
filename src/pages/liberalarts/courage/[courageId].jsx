@@ -96,7 +96,7 @@ const CouragePost = ({ frontMatter, mdxSource }) => {
         />
         <meta
           property="og:url"
-          content={`https://muchimuchi.vercel.app/liberalarts/courage/${params.courageId}`}
+          content={`https://muchimuchi.vercel.app/liberalarts/courage/${frontMatter.slug}`}
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
@@ -113,7 +113,7 @@ const CouragePost = ({ frontMatter, mdxSource }) => {
         />
         <link
           rel="canonical"
-          href={`https://muchimuchi.vercel.app/liberalarts/courage/${params.courageId}`}
+          href={`https://muchimuchi.vercel.app/liberalarts/courage/${frontMatter.slug}`}
         />
       </Head>
     </div>

@@ -29,7 +29,6 @@ export const getStaticProps = async () => {
     const { data, content } = matter(fileContent);
 
     return {
-      slug: fileArg.replace(".mdx", ""),
       frontMatter: data,
       content,
     };

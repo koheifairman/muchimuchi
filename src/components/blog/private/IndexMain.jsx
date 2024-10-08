@@ -7,7 +7,7 @@ const IndexMain = ({ posts }) => {
   const router = useRouter();
   // ---関数---
   const clickRouter = (postsArg) => {
-    router.push(`/blog/private/${postsArg.slug}`);
+    router.push(`/blog/private/${postsArg.frontMatter.slug}`);
   };
   // jsx, mdx部分非表示
   const removeJSXAndMDX = (removeArg) => {
@@ -80,7 +80,7 @@ const IndexMain = ({ posts }) => {
       {/* フィルターされた記事一覧 */}
       {filteredPosts.map((postsArg) => {
         return (
-          <div key={postsArg.slug} className="article-container">
+          <div key={postsArg.frontMatter.slug} className="article-container">
             <div className="title" onClick={() => clickRouter(postsArg)}>
               {postsArg.frontMatter.title}
             </div>
