@@ -35,6 +35,36 @@ const LiberalartsIndex = () => {
 
       <Head>
         <title>リベラル・アーツ</title>
+        <meta name="description" content="リベラル・アーツトップページ。" />
+        <meta
+          property="og:title"
+          content="リベラル・アーツ | むちむち無知の知くんのサイト"
+        />
+        <meta
+          property="og:description"
+          content="リベラル・アーツトップページ。"
+        />
+        <meta
+          property="og:url"
+          content="https://muchimuchi.vercel.app/liberalarts"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="リベラル・アーツ | むちむち無知の知くんのサイト"
+        />
+        <meta
+          name="twitter:description"
+          content="リベラル・アーツトップページ。"
+        />
+        <meta
+          name="twitter:image"
+          content="https://storage.googleapis.com/muchimuchi_bucket/global/og-image.webp"
+        />
+        <link
+          rel="canonical"
+          href="https://muchimuchi.vercel.app/liberalarts"
+        />
       </Head>
     </div>
   );

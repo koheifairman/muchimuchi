@@ -34,6 +34,27 @@ const contact = () => {
 
       <Head>
         <title>Contact</title>
+        <meta name="description" content="連絡先ページ。" />
+        <meta
+          property="og:title"
+          content="Contact | むちむち無知の知くんのサイト"
+        />
+        <meta property="og:description" content="連絡先ページ。" />
+        <meta
+          property="og:url"
+          content="https://muchimuchi.vercel.app/contact"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Contact | むちむち無知の知くんのサイト"
+        />
+        <meta name="twitter:description" content="連絡先ページ。" />
+        <meta
+          name="twitter:image"
+          content="https://storage.googleapis.com/muchimuchi_bucket/global/og-image.webp"
+        />
+        <link rel="canonical" href="https://muchimuchi.vercel.app/contact" />
       </Head>
     </div>
   );

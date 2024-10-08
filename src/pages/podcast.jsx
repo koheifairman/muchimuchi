@@ -34,6 +34,27 @@ const podcast = () => {
 
       <Head>
         <title>Podcast</title>
+        <meta name="description" content="Podcast紹介ページ。" />
+        <meta
+          property="og:title"
+          content="Podcast | むちむち無知の知くんのサイト"
+        />
+        <meta property="og:description" content="Podcast紹介ページ。" />
+        <meta
+          property="og:url"
+          content="https://muchimuchi.vercel.app/podcast"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Podcast | むちむち無知の知くんのサイト"
+        />
+        <meta name="twitter:description" content="Podcast紹介ページ。" />
+        <meta
+          name="twitter:image"
+          content="https://storage.googleapis.com/muchimuchi_bucket/global/og-image.webp"
+        />
+        <link rel="canonical" href="https://muchimuchi.vercel.app/podcast" />
       </Head>
     </div>
   );

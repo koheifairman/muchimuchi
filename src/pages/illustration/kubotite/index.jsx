@@ -93,6 +93,30 @@ const index = () => {
 
       <Head>
         <title>久保帯人</title>
+        <meta name="description" content="久保帯人のイラストページ。" />
+        <meta
+          property="og:title"
+          content="久保帯人 | むちむち無知の知くんのサイト"
+        />
+        <meta property="og:description" content="久保帯人のイラストページ。" />
+        <meta
+          property="og:url"
+          content="https://muchimuchi.vercel.app/illustration/kubotite"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="久保帯人 | むちむち無知の知くんのサイト"
+        />
+        <meta name="twitter:description" content="久保帯人のイラストページ。" />
+        <meta
+          name="twitter:image"
+          content="https://storage.googleapis.com/muchimuchi_bucket/global/og-image.webp"
+        />
+        <link
+          rel="canonical"
+          href="https://muchimuchi.vercel.app/illustration/kubotite"
+        />
       </Head>
     </div>
   );

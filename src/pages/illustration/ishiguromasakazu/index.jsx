@@ -58,6 +58,30 @@ const index = () => {
 
       <Head>
         <title>石黒正数</title>
+        <meta name="description" content="石黒正数のイラストページ。" />
+        <meta
+          property="og:title"
+          content="石黒正数 | むちむち無知の知くんのサイト"
+        />
+        <meta property="og:description" content="石黒正数のイラストページ。" />
+        <meta
+          property="og:url"
+          content="https://muchimuchi.vercel.app/illustration/ishiguromasakazu"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="石黒正数 | むちむち無知の知くんのサイト"
+        />
+        <meta name="twitter:description" content="石黒正数のイラストページ。" />
+        <meta
+          name="twitter:image"
+          content="https://storage.googleapis.com/muchimuchi_bucket/global/og-image.webp"
+        />
+        <link
+          rel="canonical"
+          href="https://muchimuchi.vercel.app/illustration/ishiguromasakazu"
+        />
       </Head>
     </div>
   );

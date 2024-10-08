@@ -4,13 +4,24 @@ const Document = () => (
   <Html>
     <Head>
         <link
-            rel="icon"
-            href="https://storage.googleapis.com/muchimuchi_bucket/favicon.ico/favicon.webp"
-            />
+          rel="icon"
+          href="https://storage.googleapis.com/muchimuchi_bucket/favicon.ico/favicon.webp"
+        />
         <html lang="ja" />
-        <meta name="description" content="リベラルアーツ、音楽、イラストなど、管理人の趣味活動をまとめたサイト。マスコットは「むちむち無知の知くん」。" />
-        <meta name="keywords" content="リベラルアーツ, 音楽, イラスト, ブログ" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="リベラルアーツ、音楽、イラスト、YouTube、Podcastなど、管理人の趣味活動をまとめたサイト。マスコットは「むちむち無知の知くん」。" />
+        <meta name="keywords" content="むちむち無知の知くんのサイト, リベラルアーツ, 音楽, イラスト, ブログ, YouTube, Podcast" />
+        <meta property="og:title" content="むちむち無知の知くんのサイト" />
+        <meta property="og:description" content="リベラルアーツ、音楽、イラスト、YouTube、Podcastなど、管理人の趣味活動をまとめたサイト。マスコットは「むちむち無知の知くん」。" />
+        <meta property="og:image" content="https://storage.googleapis.com/muchimuchi_bucket/global/og-image.webp" />
+        <meta property="og:url" content="https://muchimuchi.vercel.app" />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="むちむち無知の知くんのサイト" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@waraigero" />
+        <meta name="twitter:title" content="むちむち無知の知くんのサイト" />
+        <meta name="twitter:description" content="リベラルアーツ、音楽、イラスト、YouTube、Podcastなど、管理人の趣味活動をまとめたサイト。マスコットは「むちむち無知の知くん」。" />
+        <meta name="twitter:image" content="https://storage.googleapis.com/muchimuchi_bucket/global/og-image.webp" />
         <style>
             @import
             url(https://fonts.googleapis.com/css2?family=Abel&display=swap);

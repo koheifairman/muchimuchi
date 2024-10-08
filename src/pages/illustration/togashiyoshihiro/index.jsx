@@ -109,6 +109,30 @@ const index = () => {
 
       <Head>
         <title>冨樫義博</title>
+        <meta name="description" content="冨樫義博のイラストページ。" />
+        <meta
+          property="og:title"
+          content="冨樫義博 | むちむち無知の知くんのサイト"
+        />
+        <meta property="og:description" content="冨樫義博のイラストページ。" />
+        <meta
+          property="og:url"
+          content="https://muchimuchi.vercel.app/illustration/togashiyoshihiro"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="冨樫義博 | むちむち無知の知くんのサイト"
+        />
+        <meta name="twitter:description" content="冨樫義博のイラストページ。" />
+        <meta
+          name="twitter:image"
+          content="https://storage.googleapis.com/muchimuchi_bucket/global/og-image.webp"
+        />
+        <link
+          rel="canonical"
+          href="https://muchimuchi.vercel.app/illustration/togashiyoshihiro"
+        />
       </Head>
     </div>
   );

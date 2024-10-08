@@ -35,6 +35,30 @@ const index = () => {
 
       <Head>
         <title>イラスト</title>
+        <meta name="description" content="イラスト作者一覧ページ。" />
+        <meta
+          property="og:title"
+          content="イラスト | むちむち無知の知くんのサイト"
+        />
+        <meta property="og:description" content="イラスト作者一覧ページ。" />
+        <meta
+          property="og:url"
+          content="https://muchimuchi.vercel.app/illustration"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="イラスト | むちむち無知の知くんのサイト"
+        />
+        <meta name="twitter:description" content="イラスト作者一覧ページ。" />
+        <meta
+          name="twitter:image"
+          content="https://storage.googleapis.com/muchimuchi_bucket/global/og-image.webp"
+        />
+        <link
+          rel="canonical"
+          href="https://muchimuchi.vercel.app/illustration"
+        />
       </Head>
     </div>
   );

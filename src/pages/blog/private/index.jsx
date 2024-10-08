@@ -82,6 +82,30 @@ const PrivateIndex = ({ posts }) => {
 
       <Head>
         <title>私的なこと</title>
+        <meta name="description" content="ブログ記事一覧ページ。" />
+        <meta
+          property="og:title"
+          content="私的なこと | むちむち無知の知くんのサイト"
+        />
+        <meta property="og:description" content="ブログ記事一覧ページ。" />
+        <meta
+          property="og:url"
+          content="https://muchimuchi.vercel.app/blog/private"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="私的なこと | むちむち無知の知くんのサイト"
+        />
+        <meta name="twitter:description" content="ブログ記事一覧ページ。" />
+        <meta
+          name="twitter:image"
+          content="https://storage.googleapis.com/muchimuchi_bucket/global/og-image.webp"
+        />
+        <link
+          rel="canonical"
+          href="https://muchimuchi.vercel.app/blog/private"
+        />
       </Head>
     </div>
   );

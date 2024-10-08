@@ -34,6 +34,33 @@ const music = () => {
 
       <Head>
         <title>音楽</title>
+        <meta
+          name="description"
+          content="音楽コンテンツ（ブログ、YouTube）に関するページ。"
+        />
+        <meta
+          property="og:title"
+          content="音楽 | むちむち無知の知くんのサイト"
+        />
+        <meta
+          property="og:description"
+          content="音楽コンテンツ（ブログ、YouTube）に関するページ。"
+        />
+        <meta property="og:url" content="https://muchimuchi.vercel.app/music" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="音楽 | むちむち無知の知くんのサイト"
+        />
+        <meta
+          name="twitter:description"
+          content="音楽コンテンツ（ブログ、YouTube）に関するページ。"
+        />
+        <meta
+          name="twitter:image"
+          content="https://storage.googleapis.com/muchimuchi_bucket/global/og-image.webp"
+        />
+        <link rel="canonical" href="https://muchimuchi.vercel.app/music" />
       </Head>
     </div>
   );

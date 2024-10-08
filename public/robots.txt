@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://muchimuchi.vercel.app/
+
+# Sitemaps
+Sitemap: https://muchimuchi.vercel.app/sitemap.xml

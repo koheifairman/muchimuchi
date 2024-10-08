@@ -36,6 +36,33 @@ const about = () => {
 
       <Head>
         <title>About</title>
+        <meta
+          name="description"
+          content="管理人と、マスコットキャラ「むちむち無知の知くん」の紹介ページ。"
+        />
+        <meta
+          property="og:title"
+          content="About | むちむち無知の知くんのサイト"
+        />
+        <meta
+          property="og:description"
+          content="管理人と、マスコットキャラ「むちむち無知の知くん」の紹介ページ。"
+        />
+        <meta property="og:url" content="https://muchimuchi.vercel.app/about" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="About | むちむち無知の知くんのサイト"
+        />
+        <meta
+          name="twitter:description"
+          content="管理人と、マスコットキャラ「むちむち無知の知くん」の紹介ページ。"
+        />
+        <meta
+          name="twitter:image"
+          content="https://storage.googleapis.com/muchimuchi_bucket/global/og-image.webp"
+        />
+        <link rel="canonical" href="https://muchimuchi.vercel.app/about" />
       </Head>
     </div>
   );

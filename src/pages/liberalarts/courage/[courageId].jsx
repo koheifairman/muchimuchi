@@ -82,6 +82,39 @@ const CouragePost = ({ frontMatter, mdxSource }) => {
 
       <Head>
         <title>{frontMatter.title}</title>
+        <meta
+          name="description"
+          content={`「${frontMatter.title}」の記事ページ。`}
+        />
+        <meta
+          property="og:title"
+          content={`${frontMatter.title} | むちむち無知の知くんのサイト`}
+        />
+        <meta
+          property="og:description"
+          content={`「${frontMatter.title}」の記事ページ。`}
+        />
+        <meta
+          property="og:url"
+          content={`https://muchimuchi.vercel.app/liberalarts/courage/${params.courageId}`}
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content={`${frontMatter.title} | むちむち無知の知くんのサイト`}
+        />
+        <meta
+          name="twitter:description"
+          content={`「${frontMatter.title}」の記事ページ。`}
+        />
+        <meta
+          name="twitter:image"
+          content="https://storage.googleapis.com/muchimuchi_bucket/global/og-image.webp"
+        />
+        <link
+          rel="canonical"
+          href={`https://muchimuchi.vercel.app/liberalarts/courage/${params.courageId}`}
+        />
       </Head>
     </div>
   );

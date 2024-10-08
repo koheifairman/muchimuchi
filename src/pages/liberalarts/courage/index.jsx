@@ -46,6 +46,30 @@ const CourageIndex = () => {
 
       <Head>
         <title>勇気出る系</title>
+        <meta name="description" content="勇気出る系トップページ。" />
+        <meta
+          property="og:title"
+          content="勇気出る系 | むちむち無知の知くんのサイト"
+        />
+        <meta property="og:description" content="勇気出る系トップページ。" />
+        <meta
+          property="og:url"
+          content="https://muchimuchi.vercel.app/liberalarts/courage"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="勇気出る系 | むちむち無知の知くんのサイト"
+        />
+        <meta name="twitter:description" content="勇気出る系トップページ。" />
+        <meta
+          name="twitter:image"
+          content="https://storage.googleapis.com/muchimuchi_bucket/global/og-image.webp"
+        />
+        <link
+          rel="canonical"
+          href="https://muchimuchi.vercel.app/liberalarts/courage"
+        />
       </Head>
     </div>
   );

@@ -46,6 +46,30 @@ const DifficultIndex = () => {
 
       <Head>
         <title>小難しい系</title>
+        <meta name="description" content="小難しい系トップページ。" />
+        <meta
+          property="og:title"
+          content="小難しい系 | むちむち無知の知くんのサイト"
+        />
+        <meta property="og:description" content="小難しい系トップページ。" />
+        <meta
+          property="og:url"
+          content="https://muchimuchi.vercel.app/liberalarts/difficult"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="小難しい系 | むちむち無知の知くんのサイト"
+        />
+        <meta name="twitter:description" content="小難しい系トップページ。" />
+        <meta
+          name="twitter:image"
+          content="https://storage.googleapis.com/muchimuchi_bucket/global/og-image.webp"
+        />
+        <link
+          rel="canonical"
+          href="https://muchimuchi.vercel.app/liberalarts/difficult"
+        />
       </Head>
     </div>
   );
