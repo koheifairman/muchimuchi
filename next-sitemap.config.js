@@ -5,3 +5,4 @@ const nextSitemap = {
 };
 
 export default nextSitemap;
+

@@ -10,7 +10,7 @@
     "sitemap": "next-sitemap"
   },
   "type": "module",
-  "_comment": "↑ next-sitemap.mjsをESM（最新の標準モジュールシステム）として正しく扱うため、Node.jsがESMを使用することを明示的に示す",
+  "_comment": "↑ Node.jsがESMを使うことを明示。サイトマップ用",
   "dependencies": {
     "@mdx-js/loader": "^3.0.1",
     "@next/mdx": "^14.2.12",

@@ -1,10 +1,10 @@
 import withMDX from "@next/mdx";
-import nextSitemap from './next-sitemap.mjs';
+import nextSitemap from './next-sitemap.config.js';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,  // 必要に応じて他の設定も追加できます
-  pageExtensions: ['js', 'jsx', 'mdx'],  // MDXファイルをページとしてサポート
+  reactStrictMode: true,
+  pageExtensions: ['js', 'jsx', 'mdx'],  // MDXファイルをサポート
   images: {
     domains: ['storage.googleapis.com'],  // google cloud strage
   },
